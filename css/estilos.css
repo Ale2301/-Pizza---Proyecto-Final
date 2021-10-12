@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Azeret+Mono&family=Oswald:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: #ff6961;
+  font-family: "Allison", cursive;
+  font-size: 2.5rem;
+}
+
+#header img {
+  height: 50px;
+  transition: .3s;
+}
+
+#header img:hover {
+  height: 60px;
+  background-color: #BEE4F7;
+  transition: .3s;
+}
+
+#header .navbar-nav {
+  justify-content: space-around;
+  width: 100%;
+}
+
+#header .navbar-nav a {
+  color: #BEE4F7;
+  transition: .2s;
+  -webkit-text-stroke: 0.9px;
+}
+
+#header .navbar-nav a:hover {
+  font-size: 2.541rem;
+  color: yellow;
+  transition: .2s;
+}
+
+#bodyContacto {
+  min-height: 521px;
+}
+
+.backgroundColorMain {
+  background-color: #ffdcba;
+}
+
+.animatedBold:hover {
+  font-weight: bold;
+}
+
+.textoGenerico, .textoMenu {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.563rem;
+  color: #4B4B4B;
+  text-align: center;
+}
+
+.textoGenerico span, .textoMenu span {
+  color: #6A951E;
+}
+
+.textoMenu {
+  font-size: 3.663rem;
+}
+
+.textoMenu:hover {
+  text-decoration: underline;
+}
+
+.textoTitulo, .subtitulo, .textoMensaje {
+  font-family: "Azeret Mono", monospace;
+  font-size: 5rem;
+  color: #ff6961;
+  justify-self: center;
+  -webkit-text-stroke: 0;
+}
+
+.subtitulo {
+  font-family: "Allison", cursive;
+  text-align: center;
+  color: black;
+  -webkit-text-stroke: 2px black;
+}
+
+.textoMensaje {
+  font-size: 50px;
+  color: #6A951E;
+  text-align: center;
+}
+
+.placeholder, .placeholderDos {
+  display: none;
+}
+
+#footer {
+  background-color: #ff6961;
+  font-family: "Azeret Mono", monospace;
+  font-size: 1.063rem;
+}
+
+.mapas {
+  width: 85%;
+}
+
+.mapas:hover {
+  width: 100%;
+  transition: 1s;
+}
+
+.button, .button--erase {
+  border: black;
+  height: 50px;
+  width: 150px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.button:hover, .button--erase:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.form-control {
+  background-color: #ff6961;
+}
+
+#inputConsulta {
+  width: 520px;
+}
+
+#bodyMensaje {
+  min-height: 521px;
+}
+
+.imagenMenu img:hover {
+  width: 95%;
+}
+
+.carousel-inner {
+  width: 500px;
+}
+
+.flechita:hover {
+  background-color: black;
+}
+
+#bodyIndex {
+  display: grid;
+  grid-template-areas: "titleUno	img	titleDos" "textUno	img textDos" "titleTres img titleCuatro" "textTres img textCuatro" "como	como como" "textCinco textCinco textCinco";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: .1fr .1fr .1fr .1fr .1fr 1fr;
+  grid-gap: 5px;
+  background-color: #ffdcba;
+}
+
+.titleUno {
+  grid-area: titleUno;
+  justify-self: center;
+}
+
+.titleDos {
+  grid-area: titleDos;
+  justify-self: center;
+}
+
+.titleTres {
+  grid-area: titleTres;
+  justify-self: center;
+}
+
+.titleCuatro {
+  grid-area: titleCuatro;
+  justify-self: center;
+}
+
+.textUno {
+  grid-area: textUno;
+  justify-self: center;
+}
+
+.textUno span {
+  color: #6A951E;
+}
+
+.textDos {
+  grid-area: textDos;
+  justify-self: center;
+}
+
+.textDos span {
+  color: #6A951E;
+}
+
+.textTres {
+  grid-area: textTres;
+  justify-self: center;
+}
+
+.textTres span {
+  color: #6A951E;
+}
+
+.textCuatro {
+  grid-area: textCuatro;
+  justify-self: center;
+}
+
+.textCuatro span {
+  color: #6A951E;
+}
+
+.textCinco {
+  grid-area: textCinco;
+  justify-content: justify;
+  align-items: center;
+}
+
+.textCinco span {
+  color: #6A951E;
+}
+
+.pizza {
+  grid-area: img;
+  justify-self: start;
+  align-self: center;
+}
+
+.como {
+  grid-area: como;
+}
+
+#bodySucursales {
+  min-height: 521px;
+  display: grid;
+  grid-template-areas: "title title title 	title" "caseros ramos palomar vsarm" "telUnoCas telUnoRam telUnoPal telUnoVsarm" "telDosCas none	 none	 telDosVsarm" "celCas	celRam	celPal	celVsarm" "mapaCas mapaRam mapaPal mapaVsarm";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
+  grid-gap: 5px;
+  background-color: #ffdcba;
+}
+
+.title {
+  grid-area: title;
+}
+
+.caseros {
+  grid-area: caseros;
+  background-color: #ff6961;
+}
+
+.ramos {
+  grid-area: ramos;
+  background-color: #ff6961;
+}
+
+.palomar {
+  grid-area: palomar;
+  background-color: #ff6961;
+}
+
+.vsarm {
+  grid-area: vsarm;
+  background-color: #ff6961;
+}
+
+.telUnoCas {
+  grid-area: telUnoCas;
+}
+
+.telUnoRam {
+  grid-area: telUnoRam;
+}
+
+.telUnoPal {
+  grid-area: telUnoPal;
+}
+
+.TelUnoVsarm {
+  grid-area: TelUnoVsarm;
+}
+
+.telDosCas {
+  grid-area: telDosCas;
+}
+
+.telDosVsarm {
+  grid-area: telDosVsarm;
+}
+
+.celCas {
+  grid-area: celCas;
+}
+
+.celRam {
+  grid-area: celRam;
+}
+
+.celPal {
+  grid-area: celPal;
+}
+
+.celVsarm {
+  grid-area: celVsarm;
+}
+
+.mapaCas {
+  grid-area: mapaCas;
+}
+
+.mapaRam {
+  grid-area: mapaRam;
+}
+
+.mapaPal {
+  grid-area: mapaPal;
+}
+
+.mapaVsarm {
+  grid-area: mapaVsarm;
+}
+
+#bodyMenu {
+  min-height: 521px;
+  background-color: #ffdcba;
+  display: grid;
+  grid-template-areas: "tituloMenu tituloMenu tituloMenu" "pizzasMenu textoMenu empanadasMenu";
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: .1fr .1fr;
+}
+
+.tituloMenu {
+  grid-area: tituloMenu;
+}
+
+.pizzasMenu {
+  grid-area: pizzasMenu;
+  justify-self: center;
+}
+
+.textoMenu {
+  grid-area: textoMenu;
+}
+
+.empanadasMenu {
+  grid-area: empanadasMenu;
+  justify-self: center;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #bodyIndex {
+    grid-template-areas: "titleUno como titleDos" "textUno textCinco textDos" "titleTres . titleCuatro" "textTres . textCuatro";
+    grid-gap: 0px;
+    grid-template-rows: .1fr .1fr .1fr 1fr;
+  }
+  .pizza {
+    display: none;
+  }
+  .textoGenerico, .textoMenu {
+    font-size: 1.4067rem;
+  }
+  .textoMenu {
+    font-size: 1.4652rem;
+  }
+  .textoTitulo, .subtitulo, .textoMensaje {
+    font-size: 2.5rem;
+  }
+  .textoMensaje {
+    font-size: 50px;
+  }
+  .subtitulo {
+    -webkit-text-stroke: 1px;
+  }
+  .botonesContacto, label {
+    min-width: 600px;
+  }
+  #bodyMenu {
+    min-height: 582px;
+    width: 100%;
+    grid-template-areas: "tituloMenu tituloMenu tituloMenu"	 "empanadasMenu textoMenu pizzasMenu";
+    grid-template-columns: 5fr 3fr 5fr;
+    grid-template-rows: .1fr .1fr;
+  }
+  .imagenMenu img:hover {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #bodyIndex {
+    grid-template-areas: "titleUno titleDos titleTres titleCuatro" "textUno textDos textTres textCuatro" "como como como como" "textCinco textCinco textCinco textCinco";
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-rows: .1fr .8fr .1fr .1fr;
+    grid-gap: 0px;
+  }
+  .pizza {
+    display: none;
+  }
+  #header {
+    font-size: 2rem;
+  }
+  .textoGenerico, .textoMenu {
+    font-size: 1.4067rem;
+  }
+  .textoMenu {
+    font-size: 1.4652rem;
+  }
+  .textoTitulo, .subtitulo, .textoMensaje {
+    font-size: 2.5rem;
+  }
+  .textoMensaje {
+    font-size: 40px;
+  }
+  .subtitulo {
+    -webkit-text-stroke: 1px;
+  }
+  #bodySucursales {
+    grid-template-areas: "title title title title title" "caseros mapaCas telUnoCas telDosCas celCas" "ramos mapaRam telUnoRam placeholder celRam" "palomar mapaPal telUnoPal placeholderDos celPal" "vsarm mapaVsarm telUnoVsarm telDosVsarm celVsarm";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr .1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+  }
+  .placeholder {
+    display: block;
+    grid-area: placeholder;
+  }
+  .placeholderDos {
+    display: block;
+    grid-area: placeholderDos;
+  }
+  .mapas {
+    height: 100%;
+  }
+  #bodyContacto {
+    min-height: 421px;
+  }
+  .botonesContacto, label {
+    min-width: 400px;
+  }
+  .button, .button--erase {
+    width: 70px;
+    height: 30px;
+    border-radius: 0px;
+  }
+  .button--erase {
+    width: 96px;
+  }
+  #bodyMenu {
+    grid-template-areas: "tituloMenu tituloMenu tituloMenu" ". pizzasMenu ." ". empanadasMenu ." "textoMenu textoMenu textoMenu";
+    grid-template-columns: 5fr 2fr 5fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr;
+  }
+  .imagenMenu img:hover {
+    width: auto;
+  }
+  .displayNoneEspecial {
+    display: none;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  #header {
+    font-size: 2rem;
+  }
+  #footer {
+    font-size: 0.6378rem;
+  }
+  .textoGenerico, .textoMenu {
+    font-size: 1.4067rem;
+  }
+  .textoMenu {
+    font-size: 1.4652rem;
+  }
+  .textoTitulo, .subtitulo, .textoMensaje {
+    font-size: 1.75rem;
+  }
+  .textoMensaje {
+    font-size: 35px;
+  }
+  .subtitulo {
+    -webkit-text-stroke: 1px;
+  }
+  #bodyIndex {
+    grid-template-areas: "titleUno img titleDos" "textUno img textDos" "titleTres como titleCuatro" "textTres textCinco textCuatro";
+    grid-template-columns: 3fr 6fr 3fr;
+    grid-template-rows: .1fr 1fr .1fr .1fr;
+    grid-row-gap: 5px;
+  }
+  .pizza {
+    align-self: center;
+    justify-self: center;
+  }
+  #bodySucursales {
+    grid-template-areas: "title title title title title" "caseros mapaCas telUnoCas telDosCas celCas" "ramos mapaRam telUnoRam placeholder celRam" "palomar mapaPal telUnoPal placeholderDos celPal" "vsarm mapaVsarm telUnoVsarm telDosVsarm celVsarm";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr .1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+  }
+  .placeholder {
+    display: block;
+    grid-area: placeholder;
+  }
+  .placeholderDos {
+    display: block;
+    grid-area: placeholderDos;
+  }
+  .mapas {
+    height: 100%;
+  }
+  #bodyContacto {
+    min-height: 421px;
+  }
+  .botonesContacto, label {
+    min-width: 400px;
+  }
+  .button, .button--erase {
+    width: 70px;
+    height: 30px;
+    border-radius: 0px;
+  }
+  .flex-md-column {
+    flex-direction: column !important;
+    /*Bootstrap no me dejaba poner columna*/
+  }
+  #bodyMenu {
+    grid-template-areas: "tituloMenu tituloMenu tituloMenu" ". pizzasMenu ." ". empanadasMenu ." "textoMenu textoMenu textoMenu";
+    grid-template-columns: 5fr 2fr 5fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr;
+  }
+  .imagenMenu img:hover {
+    width: auto;
+  }
+  .displayNoneEspecial {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  #header {
+    font-size: 1.25rem;
+  }
+  #footer {
+    font-size: 0.6378rem;
+  }
+  .textoGenerico, .textoMenu {
+    font-size: 1.2504rem;
+  }
+  .textoMenu {
+    font-size: 1.4652rem;
+  }
+  .textoTitulo, .subtitulo, .textoMensaje {
+    font-size: 1.25rem;
+  }
+  .textoMensaje {
+    font-size: 32.5px;
+  }
+  .subtitulo {
+    -webkit-text-stroke: 0.5px;
+  }
+  #bodyIndex {
+    min-height: 421px;
+    grid-template-areas: "titleUno titleDos" "textUno textDos" "titleTres titleCuatro" "textTres textCuatro" "como como" "textCinco textCinco";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
+  }
+  .pizza {
+    display: none;
+  }
+  #bodySucursales {
+    min-height: 421px;
+    grid-template-areas: "title title title" "caseros caseros caseros" "telUnoCas telDosCas celCas" "ramos ramos ramos" "telUnoRam placeholder celRam" "palomar palomar palomar" "telUnoPal placeholderDos celPal" "vsarm vsarm vsarm" "telUnoVsarm telDosVsarm celVsarm";
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
+  }
+  .placeholder {
+    display: block;
+    grid-area: placeholder;
+  }
+  .placeholderDos {
+    display: block;
+    grid-area: placeholderDos;
+  }
+  .mapaCas, .mapaRam, .mapaPal, .mapaVsarm {
+    display: none;
+  }
+  #bodyMenu {
+    grid-template-areas: "tituloMenu tituloMenu tituloMenu" ". pizzasMenu ." ". empanadasMenu ." "textoMenu textoMenu textoMenu";
+    grid-template-columns: 5fr 2fr 5fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr;
+  }
+  .imagenMenu img:hover {
+    width: auto;
+  }
+  #bodyContacto {
+    min-height: 361px;
+    padding-top: 20px;
+  }
+  label {
+    display: none;
+  }
+  .excepcion {
+    display: block;
+  }
+  .button, .button--erase {
+    width: 70px;
+    height: 30px;
+    border-radius: 0px;
+  }
+  .button--erase {
+    width: 96px;
+  }
+  .flex-md-column {
+    flex-direction: column !important;
+  }
+  .carousel-item {
+    display: none;
+  }
+  .carousel-item img {
+    display: none !important;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    display: none;
+  }
+  .displayNone, .displayNoneEspecial {
+    display: none;
+  }
+  .displayNoneEspecial {
+    display: none;
+  }
+}
+
+.excepcion {
+  text-align: initial;
+}

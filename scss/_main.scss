@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Azeret+Mono&family=Oswald:wght@200&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+#header{
+	background-color: $bg-header-and-footer;
+	font-family: $text-font-header;
+	font-size: $text-header-font-size;
+	img{
+		height: $tamaño-logo;
+		transition: .3s;
+		&:hover{
+			height: $animated-logo;
+			background-color: #BEE4F7; 
+			transition: .3s;
+		}
+	}
+	.navbar-nav{
+		justify-content: space-around;
+		width: 100%;
+		a{
+			color: $text-color-header;
+			transition: .2s;
+			-webkit-text-stroke: 0.9px;
+			&:hover{
+				font-size: $animated-font-size;
+				color: $animated-header;
+				transition: .2s;
+			}
+		}
+	}
+}
+#bodyContacto{
+	min-height: $min-body-height;
+}
+.backgroundColorMain{
+	background-color: $background-color-main;
+}
+.animatedBold:hover{
+	font-weight: bold;
+}
+.textoGenerico{
+	font-family: $text-font-generico;
+	font-size: $text-size-generico;
+	color: $text-color-generico;
+	text-align: center;
+	span{
+		color: $text-special-color;
+	}
+}
+.textoMenu{
+	@extend .textoGenerico;
+	font-size: $text-size-menu;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+.textoTitulo{
+	font-family: $text-font-titulo;
+    font-size: $text-size-titulo;
+    color: $text-color-titulo;
+    justify-self: center;
+    -webkit-text-stroke: 0;
+}
+.subtitulo{
+	@extend .textoTitulo;
+	font-family: $text-font-header;
+    text-align: center;
+    color: $color-subtitulo;
+    -webkit-text-stroke: 2px black;
+}
+.textoMensaje{
+	@extend .textoTitulo;
+	font-size: $text-size-mensaje;
+	color: $text-special-color;
+	text-align: center;
+}
+.placeholder, .placeholderDos{
+	display: none;
+}
+#footer{
+	background-color: $bg-header-and-footer;
+	font-family: $text-font-footer;
+	font-size: $text-footer-font-size;
+}
+.mapas{
+	width: 85%;
+	&:hover{
+		width: 100%;
+		transition: 1s;
+	}
+}
+.button{
+	border: black;
+	height: 50px;
+	width: 150px;
+	border-radius: 50px;
+	background-color: $bg-button;
+		&:hover{
+			cursor: pointer;
+			background-color: $bg-animated-button;
+		}
+		&--erase{
+			@extend .button;
+		}
+}
+.form-control{
+	background-color: $bg-header-and-footer;
+}
+#inputConsulta{
+	width: 520px;
+}
+#bodyMensaje{
+	min-height: $min-body-height;
+}
+.imagenMenu img:hover{
+	width: 95%;
+}
+.carousel-inner{
+	width: 500px;
+}
+.flechita:hover{
+	background-color: $bg-animated-button;
+}
+.displayNone{
+	&Especial{
+		@extend .displayNone;
+	}
+}

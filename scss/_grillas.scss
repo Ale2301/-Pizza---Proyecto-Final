@@ -1,0 +1,84 @@
+#bodyIndex{
+	display: grid;
+	grid-template-areas: 
+	"titleUno	img	titleDos"
+	"textUno	img textDos"
+	"titleTres img titleCuatro"
+	"textTres img textCuatro"
+	"como	como como"
+	"textCinco textCinco textCinco";
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: .1fr .1fr .1fr .1fr .1fr 1fr;
+	grid-gap: $grid-default-gap;
+	background-color: $background-color-main;
+}
+@each $title-grilla-index in titleUno, titleDos, titleTres, titleCuatro{
+    .#{$title-grilla-index}{
+        grid-area: $title-grilla-index;
+        justify-self: center;
+    }
+}
+@each $text-grilla-index in textUno, textDos, textTres, textCuatro, textCinco{
+	.#{$text-grilla-index}{
+		grid-area: $text-grilla-index;
+	@if $text-grilla-index == textCinco{
+		justify-content: justify;
+		align-items: center;
+	}
+	@else{
+		justify-self: center;
+	}
+	span{
+		color: #6A951E;
+		}
+	}
+}
+.pizza{
+	grid-area: img;
+	justify-self: start;
+	align-self: center;
+}
+.como{
+	grid-area: como;
+}
+#bodySucursales{
+	min-height: $min-body-height;
+	display: grid;
+	grid-template-areas: 
+	"title title title 	title"
+	"caseros ramos palomar vsarm"
+	"telUnoCas telUnoRam telUnoPal telUnoVsarm"
+	"telDosCas none	 none	 telDosVsarm"
+	"celCas	celRam	celPal	celVsarm"
+	"mapaCas mapaRam mapaPal mapaVsarm";
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
+	grid-gap: $grid-default-gap;
+	background-color: $background-color-main;
+}
+@each $grilla-sucursales in title, caseros, ramos, palomar, vsarm, telUnoCas, telUnoRam, telUnoPal, TelUnoVsarm, telDosCas, telDosVsarm, celCas, celRam, celPal, celVsarm, mapaCas, mapaRam, mapaPal, mapaVsarm{
+	.#{$grilla-sucursales}{
+		grid-area: $grilla-sucursales;
+		@if $grilla-sucursales == caseros or $grilla-sucursales == ramos or $grilla-sucursales == palomar or $grilla-sucursales == vsarm{
+			background-color: $bg-header-and-footer;
+		}
+	}
+}
+#bodyMenu{
+	min-height: $min-body-height;
+    background-color: $background-color-main;
+    display: grid;
+    grid-template-areas:
+    "tituloMenu tituloMenu tituloMenu"
+    "pizzasMenu textoMenu empanadasMenu";
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: .1fr .1fr;
+}
+@each $grilla-menu in tituloMenu, pizzasMenu, textoMenu, empanadasMenu{
+	.#{$grilla-menu}{
+		grid-area: $grilla-menu;
+		@if $grilla-menu == pizzasMenu or $grilla-menu == empanadasMenu{
+			justify-self: center;
+		}
+	}
+}
