@@ -213,7 +213,7 @@
 		border-radius: 0px;
 	}
 	.flex-md-column {
-    flex-direction: column!important; /*Bootstrap no me dejaba poner columna*/
+    	flex-direction: column!important; /*Bootstrap no me dejaba poner columna*/
 	}
 	#bodyMenu{
 		grid-template-areas:
@@ -257,6 +257,7 @@
 	}
 	.subtitulo{
 		 -webkit-text-stroke: 0.5px;
+		 font-size: $text-size-titulo * 0.45;
 	}
 	#bodyIndex{
 		min-height: $min-body-height - 100;
@@ -312,7 +313,7 @@
 		width: auto;
 	}
 	#bodyContacto{
-		min-height: $min-body-height - 160;
+		min-height: $min-body-height + 100;
 		padding-top: 20px;
 	}
 	label{
