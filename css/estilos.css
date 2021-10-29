@@ -571,7 +571,7 @@
     display: none;
   }
   #bodySucursales {
-    min-height: 421px;
+    min-height: 521px;
     grid-template-areas: "title title title" "caseros caseros caseros" "telUnoCas telDosCas celCas" "ramos ramos ramos" "telUnoRam placeholder celRam" "palomar palomar palomar" "telUnoPal placeholderDos celPal" "vsarm vsarm vsarm" "telUnoVsarm telDosVsarm celVsarm";
     grid-template-columns: 4fr 4fr 4fr;
     grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
@@ -596,7 +596,7 @@
     width: auto;
   }
   #bodyContacto {
-    min-height: 621px;
+    min-height: 521px;
     padding-top: 20px;
   }
   label {
