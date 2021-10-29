@@ -517,7 +517,7 @@
     min-width: 400px;
   }
   .button, .button--erase {
-    width: 70px;
+    width: 100px;
     height: 30px;
     border-radius: 0px;
   }
@@ -562,7 +562,7 @@
     font-size: 2.25rem;
   }
   #bodyIndex {
-    min-height: 421px;
+    min-height: 541px;
     grid-template-areas: "titleUno titleDos" "textUno textDos" "titleTres titleCuatro" "textTres textCuatro" "como como" "textCinco textCinco";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
@@ -598,9 +598,6 @@
   #bodyContacto {
     min-height: 521px;
     padding-top: 20px;
-  }
-  label {
-    display: none;
   }
   .excepcion {
     display: block;

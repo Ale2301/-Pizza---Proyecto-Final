@@ -208,7 +208,7 @@
 		min-width: 400px;
 	}
 	.button{
-		width: 70px;
+		width: 100px;
  		height: 30px;
 		border-radius: 0px;
 	}
@@ -260,7 +260,7 @@
 		 font-size: $text-size-titulo * 0.45;
 	}
 	#bodyIndex{
-		min-height: $min-body-height - 100;
+		min-height: $min-body-height + 20;
 		grid-template-areas:
 		"titleUno titleDos"
 		"textUno textDos"
@@ -315,9 +315,6 @@
 	#bodyContacto{
 		min-height: $min-body-height;
 		padding-top: 20px;
-	}
-	label{
-		display: none;
 	}
 	.excepcion{
 		display: block;
