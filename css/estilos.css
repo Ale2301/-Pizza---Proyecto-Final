@@ -134,10 +134,6 @@
   min-height: 521px;
 }
 
-.imagenMenu img:hover {
-  width: 95%;
-}
-
 .carousel-inner {
   width: 500px;
 }
@@ -325,9 +321,10 @@
   min-height: 521px;
   background-color: #ffdcba;
   display: grid;
-  grid-template-areas: "tituloMenu tituloMenu tituloMenu" "pizzasMenu textoMenu empanadasMenu";
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-areas: "tituloMenu tituloMenu tituloMenu" "pizzasMenu otros empanadasMenu";
+  grid-template-columns: 4fr 3fr 4fr;
   grid-template-rows: .1fr .1fr;
+  grid-gap: 1.1px;
 }
 
 .tituloMenu {
@@ -336,16 +333,57 @@
 
 .pizzasMenu {
   grid-area: pizzasMenu;
-  justify-self: center;
+  text-align: center;
+  background-color: #D3D3D3;
+  font-size: 1.563rem;
+  font-family: "Oswald", sans-serif;
 }
 
-.textoMenu {
-  grid-area: textoMenu;
+.pizzasMenu span {
+  color: green;
 }
 
 .empanadasMenu {
   grid-area: empanadasMenu;
-  justify-self: center;
+  text-align: center;
+  background-color: #D3D3D3;
+  font-size: 1.563rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.empanadasMenu span {
+  color: green;
+}
+
+.otros {
+  grid-area: otros;
+  background-color: white;
+}
+
+#gridEmpanadas {
+  background-color: #D3D3D3;
+  display: grid;
+  grid-template-areas: "empanadas canastitas";
+  grid-template-columns: 6fr 6fr;
+  min-height: 770px;
+}
+
+.empanadas {
+  grid-area: empanadas;
+  border: solid white 2px;
+}
+
+.empanadas .textoTitulo, .empanadas .subtitulo, .empanadas .textoMensaje {
+  font-size: 40px;
+}
+
+.canastitas {
+  grid-area: canastitas;
+  border: solid white 2px;
+}
+
+.canastitas .textoTitulo, .canastitas .subtitulo, .canastitas .textoMensaje {
+  font-size: 40px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -376,14 +414,10 @@
     min-width: 600px;
   }
   #bodyMenu {
-    min-height: 582px;
-    width: 100%;
-    grid-template-areas: "tituloMenu tituloMenu tituloMenu"	 "empanadasMenu textoMenu pizzasMenu";
-    grid-template-columns: 5fr 3fr 5fr;
-    grid-template-rows: .1fr .1fr;
+    grid-template-rows: .1fr;
   }
-  .imagenMenu img:hover {
-    width: auto;
+  #gridEmpanadas {
+    min-height: 940px;
   }
 }
 
@@ -448,12 +482,12 @@
     width: 96px;
   }
   #bodyMenu {
-    grid-template-areas: "tituloMenu tituloMenu tituloMenu" ". pizzasMenu ." ". empanadasMenu ." "textoMenu textoMenu textoMenu";
-    grid-template-columns: 5fr 2fr 5fr;
-    grid-template-rows: .1fr .1fr .1fr .1fr;
+    grid-template-areas: "tituloMenu tituloMenu tituloMenu" "otros otros otros" "pizzasMenu pizzasMenu pizzasMenu" "empanadasMenu empanadasMenu empanadasMenu";
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: .1fr .1fr .1fr;
   }
-  .imagenMenu img:hover {
-    width: auto;
+  #gridEmpanadas {
+    min-height: 87%;
   }
   .displayNoneEspecial {
     display: none;
@@ -526,12 +560,12 @@
     /*Bootstrap no me dejaba poner columna*/
   }
   #bodyMenu {
-    grid-template-areas: "tituloMenu tituloMenu tituloMenu" ". pizzasMenu ." ". empanadasMenu ." "textoMenu textoMenu textoMenu";
-    grid-template-columns: 5fr 2fr 5fr;
-    grid-template-rows: .1fr .1fr .1fr .1fr;
+    grid-template-areas: "tituloMenu tituloMenu tituloMenu" "otros otros otros" "pizzasMenu pizzasMenu pizzasMenu" "empanadasMenu empanadasMenu empanadasMenu";
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: .1fr .1fr .1fr;
   }
-  .imagenMenu img:hover {
-    width: auto;
+  #gridEmpanadas {
+    min-height: 90%;
   }
   .displayNoneEspecial {
     display: none;
@@ -588,12 +622,15 @@
     display: none;
   }
   #bodyMenu {
-    grid-template-areas: "tituloMenu tituloMenu tituloMenu" ". pizzasMenu ." ". empanadasMenu ." "textoMenu textoMenu textoMenu";
-    grid-template-columns: 5fr 2fr 5fr;
-    grid-template-rows: .1fr .1fr .1fr .1fr;
+    grid-template-areas: "tituloMenu tituloMenu tituloMenu" "otros otros otros" "pizzasMenu pizzasMenu pizzasMenu" "empanadasMenu empanadasMenu empanadasMenu";
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: .1fr .1fr .1fr;
   }
-  .imagenMenu img:hover {
-    width: auto;
+  #gridEmpanadas {
+    grid-template-areas: "empanadas" "canastitas";
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr;
+    justify-content: center;
   }
   #bodyContacto {
     min-height: 521px;

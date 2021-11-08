@@ -70,15 +70,42 @@
     display: grid;
     grid-template-areas:
     "tituloMenu tituloMenu tituloMenu"
-    "pizzasMenu textoMenu empanadasMenu";
-    grid-template-columns: 2fr 2fr 2fr;
+    "pizzasMenu otros empanadasMenu";
+    grid-template-columns: 4fr 3fr 4fr;
     grid-template-rows: .1fr .1fr;
+    grid-gap: 1.1px;
 }
-@each $grilla-menu in tituloMenu, pizzasMenu, textoMenu, empanadasMenu{
+@each $grilla-menu in tituloMenu, pizzasMenu, empanadasMenu, otros{
 	.#{$grilla-menu}{
 		grid-area: $grilla-menu;
 		@if $grilla-menu == pizzasMenu or $grilla-menu == empanadasMenu{
-			justify-self: center;
+			text-align: center;
+			background-color: #D3D3D3;
+			font-size: $text-size-generico;
+			font-family: $text-font-generico;
+			 span{
+			 	color: green;
+			}
+		}
+		@else if $grilla-menu == otros{
+			background-color: white;
+		}
+	}
+}
+#gridEmpanadas{
+	background-color: #D3D3D3;
+	display: grid;
+	grid-template-areas:
+	"empanadas canastitas";
+	grid-template-columns: 6fr 6fr;
+	min-height: 770px;
+}
+@each $grilla-empanadas in empanadas, canastitas{
+	.#{$grilla-empanadas}{
+		grid-area: $grilla-empanadas;
+		border: solid white 2px;
+		.textoTitulo{
+			font-size: 40px;
 		}
 	}
 }
